@@ -1,0 +1,7 @@
+applications:
+    - name: dm-dev-search-api
+      command: python application.py runprodserver
+      memory: 128M
+      disk_quota: 512M
+      env:
+          DM_ELASTICSEARCH_URL: search-digital-marketplace-dev-dlc2jevc4vmtqaptuf3pecnirq.ap-southeast-2.es.amazonaws.com:80

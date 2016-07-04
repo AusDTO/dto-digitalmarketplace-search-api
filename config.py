@@ -20,7 +20,7 @@ class Config:
     # Logging
     DM_LOG_LEVEL = 'DEBUG'
     DM_APP_NAME = 'search-api'
-    DM_LOG_PATH = '/var/log/digitalmarketplace/application.log'
+    DM_LOG_PATH = None
     DM_REQUEST_ID_HEADER = 'DM-Request-ID'
     DM_DOWNSTREAM_REQUEST_ID_HEADER = 'X-Amz-Cf-Id'
 
@@ -35,6 +35,7 @@ class Config:
 class Test(Config):
     DEBUG = True
     DM_LOG_LEVEL = 'CRITICAL'
+    DM_LOG_PATH = '/var/log/digitalmarketplace/application.log'
 
     DM_SEARCH_API_AUTH_TOKENS = 'valid-token'
 
