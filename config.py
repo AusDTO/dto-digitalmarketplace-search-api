@@ -23,6 +23,7 @@ class Config:
     DM_LOG_PATH = None
     DM_REQUEST_ID_HEADER = 'DM-Request-ID'
     DM_DOWNSTREAM_REQUEST_ID_HEADER = 'X-Amz-Cf-Id'
+    BASE_TEMPLATE_DATA = {}
 
     # Feature Flags
     RAISE_ERROR_ON_MISSING_FEATURES = True
